@@ -7,6 +7,15 @@ body {
   background-color: #e8d7a7;
   font-family: "Balsamiq Sans", cursive;
 }
+
+#header {
+  display: flex;
+  position: sticky;
+  background-color: rgb(118, 116, 136);
+  color: white;
+  top: 0;
+  width: 100%;
+}
 ul {
   list-style-type: none;
   margin: 0;
@@ -21,10 +30,9 @@ li {
 
 li a {
   display: block;
-  color: rgb(78, 72, 72);
+  color: white;
   text-align: center;
   padding: 1.5em 1em;
-
   text-decoration: none;
   font-size: 1em;
 }
@@ -34,7 +42,10 @@ li a {
   margin-left: 3em;
   margin-right: 0;
 }
-header h2 {
+.nav-link {
+  padding: 30px 0;
+}
+#second-header h2 {
   display: block;
   font-size: 1.5em;
   text-align: center;
@@ -88,13 +99,13 @@ img {
   width: 50px;
   height: 50px;
 }
-#visual-data {
+#video-player {
   margin: 50px auto;
   width: 50%;
   padding: 10px;
   border: 1px solid green;
 }
-#content {
+#pricing {
   margin: auto;
   width: 80%;
 }
@@ -123,4 +134,40 @@ footer h6 {
   background-color: rgb(17, 7, 17);
   color: white;
   padding: 20px;
+}
+@media screen and (max-width: 672px) {
+  #header-img {
+    display: none;
+  }
+  ul {
+    height: 100px;
+  }
+  input[type="email"] {
+    width: 100%;
+    padding: 12px 2px;
+    margin: 10px auto;
+    display: block;
+    font-size: 0.8em;
+  }
+  .button {
+    background-color: #4caf50;
+    width: 40%;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 0.8em;
+    margin-left: 30%;
+    cursor: pointer;
+    border-radius: 12px;
+  }
+  .icon {
+    text-align: center;
+  }
+  #video-player {
+    margin: 30px auto;
+    width: 90%;
+    padding: 10px;
+    border: 1px solid green;
+  }
 }
