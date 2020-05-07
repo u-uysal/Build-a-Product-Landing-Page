@@ -87,9 +87,31 @@ img {
   width: 50px;
   height: 50px;
 }
-section {
+#visual-data {
   margin: 50px auto;
   width: 50%;
   padding: 10px;
   border: 1px solid green;
+}
+#content {
+  margin: auto;
+  width: 80%;
+}
+h6 {
+  text-align: center;
+  font-weight: bold;
+  background-color: #4caf50;
+  color: white;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+}
+p {
+  text-align: center;
+  font-size: 0.8em;
+}
+.btn {
+  margin: 5px auto;
+  width: 30%;
+  margin-left: 35%;
 }
